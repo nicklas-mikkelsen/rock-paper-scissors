@@ -12,11 +12,54 @@ body {
     padding: 30px;  
 }
 
+.pick {
+    text-align: center;
+    font-style: italic;
+}
 .gameArea {
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
+    padding: 40px 0px;
 }
+
+.gameButtons {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 6rem;
+    transition: 120ms;
+}
+
+.gameButtons:hover{
+    transform: scale(1.2);
+}
+
+.last-round {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+.results {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.scoreOutput {
+    font-size: 3rem;
+    opacity: .5;
+}
+
+.scoreOutput.winner {
+    opacity: 1;
+    font-size: 6rem;
+} 

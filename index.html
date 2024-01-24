@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <h1>Welcome to Rock Paper Scissors!</h1>
+        <h1>Welcome to Rock, Paper & Scissors!</h1>
         
     </header>
-
-    <div class="gameArea">
-        <h3 class=>Enter your pick:</h3>
-        <input class="gamePick" type="text-area" placeholder="Rock, Paper or Scissor..."></input>
-        <input class="gameInput" type="submit"></input>
-        <div class="gameComputer">a</div>
-        <div class="gameOutcome">a</div>
+    
+    <div class="pick">
+        <p>Pick Your Weapon:</p>
     </div>
     
+    <div class="gameArea">
+        <button class="gameButtons" data-selection="rock">👊</button>
+        <button class="gameButtons" data-selection="paper">🤚</button>
+        <button class="gameButtons" data-selection="scissors">✌️</button>
+    </div>
+
+    <div class="last-round">Game Stats</div>
+
+    <div class="results">
+        <div>
+            Your score: 
+            <span class="result-score" data-your-score>0</span>
+        </div>
+        <div class="computerScore">
+            Computer score: 
+            <span class="result-score" data-computer-score>0</span>
+            
+        </div>
+        
+        <!-- <div class="scoreOutput">🤚</div>
+        <div class="scoreOutput winner">👊</div> -->
+    </div>
 </body>
 </html>
